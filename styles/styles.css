@@ -1,3 +1,12 @@
+:root {
+    --box-shadow: 0 0 30px gray;
+    --width: 150px;
+    --height: auto;
+    --border: 1px solid black;
+}
+
+/* variables in css */
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -20,7 +29,7 @@ main {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid blueviolet;
+    border: 1px solid black;
     padding: 1rem;
     background-color: #eee;
     color: #333;
@@ -35,11 +44,11 @@ aside img {
 
 /* my picture */
 main img {
-    width: 150px;
-    height: auto;
+    width: var(--width);
+    height: var(--height);
     border: 1px solid black;
     padding: 0.1rem;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--box-shadow);
 }
 
 p {
@@ -47,10 +56,10 @@ p {
 }
 
 img {
-    width: 150px;
+    width: var(--width);
     height: auto;
     border: 1px solid black;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--box-shadow);
     padding: 0.1rem;
 
 }
