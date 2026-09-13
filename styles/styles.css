@@ -8,7 +8,6 @@
 /* Navigation */
 nav {
     background-color: darkblue;
-    /* keep your color */
     padding: 10px;
 }
 
@@ -47,6 +46,7 @@ aside {
 }
 
 aside img {
+    position: relative;
     width: 100%;
     height: auto;
 }
