@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Navigation */
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -31,12 +30,19 @@ main {
     padding: 1rem;
 }
 
-/* Aside section */
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid #000;
+    padding: 1rem;
+    background-color: aqua;
+    color: brown;
+}
+
 aside {
     position: relative;
     width: 20rem;
     margin: 1rem auto;
-    /* center aside */
     border: 1px solid #000;
     padding: 1rem;
     background-color: #eee;
@@ -52,8 +58,7 @@ aside img {
 aside h2.overlay {
     position: absolute;
     top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 40%;
     color: white;
     background: rgba(0, 0, 0, 0.5);
     padding: 0.5rem;
@@ -62,13 +67,12 @@ aside h2.overlay {
 /* Profile picture */
 main img {
     width: 250px;
-    height: auto;
+    height: 14rem;
     border: 1px solid #000;
     padding: 0.1rem;
     box-shadow: 0 0 30px gray;
     float: right;
-    margin: 0 0 1rem 1rem;
-    /* spacing from text */
+
 }
 
 /* Footer */
@@ -78,13 +82,4 @@ footer {
     text-align: center;
     clear: both;
     padding: 1rem;
-}
-
-/* Reusable box class */
-.box {
-    margin: 1rem;
-    border: 1px solid #000;
-    padding: 1rem;
-    background-color: aqua;
-    color: brown;
 }
