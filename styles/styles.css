@@ -1,4 +1,4 @@
-/* Universal selector reset */
+/* Universal reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,32 +8,38 @@
 /* Navigation */
 nav {
     background-color: darkblue;
+    /* keep your color */
     padding: 10px;
 }
 
 nav a {
     color: white;
-    display: block;
-    padding: 20px;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
 }
 
 /* Headings & main content */
 h1 {
     color: darkblue;
+    text-align: center;
+    margin: 1rem 0;
 }
 
 main {
     max-width: 840px;
+    margin: 0 auto;
+    /* center content */
+    padding: 1rem;
 }
 
 /* Aside section */
 aside {
     position: relative;
     width: 20rem;
-    margin: 1rem;
-    /* smaller spacing */
-    border: 1px solid black;
-    /* lighter border */
+    margin: 1rem auto;
+    /* center aside */
+    border: 1px solid #000;
     padding: 1rem;
     background-color: #eee;
     color: #333;
@@ -41,51 +47,44 @@ aside {
 }
 
 aside img {
-    width: 300px;
+    width: 100%;
     height: auto;
 }
 
-aside h2 {
+aside h2.overlay {
     position: absolute;
-    top: 47px;
-    /* add units */
-    right: 250px;
-    /* add units */
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
 }
 
-/* Profile picture */
+/*my Profile picture */
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid #000;
     padding: 0.1rem;
     box-shadow: 0 0 30px gray;
     float: right;
-    /* float image */
-}
-
-/* General images */
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    box-shadow: 0 0 30px gray;
-    padding: 0.1rem;
+    margin: 0 0 1rem 1rem;
 }
 
 /* Footer */
 footer {
-    margin-top: 15px;
+    margin-top: 2rem;
     border-top: 1px solid #000;
     text-align: center;
     clear: both;
-    /* footer clears floats */
+    padding: 1rem;
 }
 
-/* Reusable class */
+/* Reusable box class */
 .box {
     margin: 1rem;
-    border: 1px solid black;
+    border: 1px solid #000;
     padding: 1rem;
     background-color: aqua;
     color: brown;
