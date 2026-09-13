@@ -1,11 +1,10 @@
 :root {
-    --box-shadow: 0 0 30px gray;
-    --width: 150px;
-    --height: auto;
-    --border: 1px solid black;
+    --margin: 0;
+    --padding: 0;
+    --box-sizing: border-box;
 }
 
-/* variables in css */
+/*  css variables */
 
 nav {
     background-color: darkblue;
@@ -27,28 +26,44 @@ main {
 }
 
 aside {
+    position: relative;
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid black;
-    padding: 1rem;
+    margin: 10rem;
+    border: 5px solid black;
+    padding: 5rem;
     background-color: #eee;
     color: #333;
     text-align: center;
-
+    clear: both;
 }
 
 aside img {
-    width: 200px;
+
+    width: 300px;
     height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 47px;
+    right: 150px;
+}
+
+.city {
+    margin-top: 0.01rem;
+    color: rgb(196, 240, 62);
+    font-size: 2rem;
 }
 
 /* my picture */
 main img {
-    width: var(--width);
-    height: var(--height);
+    width: 150px;
+    height: auto;
     border: 1px solid black;
     padding: 0.1rem;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0 0 30px gray;
+    float: right;
+
 }
 
 p {
@@ -56,16 +71,27 @@ p {
 }
 
 img {
-    width: var(--width);
+    width: 150px;
     height: auto;
     border: 1px solid black;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0 0 30px gray;
     padding: 0.1rem;
-
 }
 
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+    clear: both;
+}
+
+/* Class selectors  */
+
+.box {
+    color: brown;
+    margin: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: aqua;
+
 }
