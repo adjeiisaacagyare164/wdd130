@@ -1,12 +1,11 @@
-:root {
-    --box-shadow: 0 0 30px gray;
-    --width: 150px;
-    --height: auto;
-    --border: 1px solid black;
+/* Universal selector reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* variables in css */
-
+/* Navigation */
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -18,6 +17,7 @@ nav a {
     padding: 20px;
 }
 
+/* Headings & main content */
 h1 {
     color: darkblue;
 }
@@ -26,46 +26,67 @@ main {
     max-width: 840px;
 }
 
+/* Aside section */
 aside {
+    position: relative;
     width: 20rem;
     margin: 1rem;
+    /* smaller spacing */
     border: 1px solid black;
+    /* lighter border */
     padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
-
 }
 
 aside img {
-    width: 200px;
+    width: 300px;
     height: auto;
 }
 
-/* my picture */
+aside h2 {
+    position: absolute;
+    top: 47px;
+    /* add units */
+    right: 250px;
+    /* add units */
+}
+
+/* Profile picture */
 main img {
-    width: var(--width);
-    height: var(--height);
-    border: 1px solid black;
-    padding: 0.1rem;
-    box-shadow: var(--box-shadow);
-}
-
-p {
-    padding: 0;
-}
-
-img {
-    width: var(--width);
+    width: 150px;
     height: auto;
     border: 1px solid black;
-    box-shadow: var(--box-shadow);
     padding: 0.1rem;
-
+    box-shadow: 0 0 30px gray;
+    float: right;
+    /* float image */
 }
 
+/* General images */
+img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: 0 0 30px gray;
+    padding: 0.1rem;
+}
+
+/* Footer */
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+    clear: both;
+    /* footer clears floats */
+}
+
+/* Reusable class */
+.box {
+    margin: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: aqua;
+    color: brown;
 }
