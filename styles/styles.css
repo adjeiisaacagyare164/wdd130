@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+:root {}
+
 nav {
     background-color: darkblue;
     padding: 10px;
