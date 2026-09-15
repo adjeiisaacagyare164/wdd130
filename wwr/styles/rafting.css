@@ -1,9 +1,9 @@
 /* CSS Variables */
 :root {
     --primary-color: green;
-    --secondary-color: tomato;
+    --secondary-color: rgb(46, 37, 36);
     --accent1-color: hsl(197, 89%, 52%);
-    --accent2-color: indigo;
+    --accent2-color: rgb(224, 32, 224);
     --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -18,7 +18,7 @@
 /* Body */
 body {
     font-family: var(--body-font);
-    color: #333;
+    color: var(--secondary-color);
     background-color: #fff;
     line-height: 1.6;
 }
@@ -50,7 +50,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: var(--accent2-color);
     text-decoration: none;
     padding: 0.5rem 1rem;
     display: inline-block;
@@ -123,11 +123,11 @@ footer {
 }
 
 /* Social Media */
-.socialmedia {
+.nav {
     margin: 1rem 0;
 }
 
-.socialmedia a {
+.nav a {
     text-decoration: none;
     margin: 0 0.5rem;
 }
