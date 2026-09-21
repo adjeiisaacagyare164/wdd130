@@ -110,8 +110,10 @@ nav a:hover {
 
 .adventure {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 20%);
     text-align: center;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .adventure h2 {
