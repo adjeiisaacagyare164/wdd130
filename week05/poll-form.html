@@ -9,44 +9,54 @@
 
 <body>
     <header>
-        <h1>WDD 130 |HTML Form User Poll</h1>
+        <h1>WDD 130 | HTML Form User Poll</h1>
     </header>
 
     <main>
         <form>
-            <p>Contact Information</p>
-            <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname" required>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <p>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </p>
+                <p>
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail" required>
+                </p>
+            </fieldset>
 
-            <label for="useremail">Email:</label>
-            <input type="email" id="useremail" name="useremail" required>
+            <fieldset>
+                <legend>Questions</legend>
+                <p>
+                    <label for="browser">What is your favorite browser?</label>
+                    <select id="browser" name="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
 
+                <p>
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </p>
 
-            <p>
-                Questions
-            </p>
-            <label for="browser">What is your favorite browser?</label>
-            <select id="browser" name="browser">
-                <option value="chrome">Chrome</option>
-                <option value="firefox">Firefox</option>
-                <option value="safari">Safari</option>
-                <option value="edge">Edge</option>
-                <option value="other">Other</option>
-            </select>
+                <p>
+                    <label for="places">List the places you have lived:</label><br>
+                    <textarea id="places" name="places" rows="6"
+                      placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea>
+                </p>
+            </fieldset>
 
-            <label for="pet">Do you have a household pet?</label>
-            <input type="checkbox" id="pet" name="pet">
-
-            <label for="places">List the places you have lived:</label>
-            <textarea id="places" name="places" rows="4"
-              placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea>
-
-            <button type="submit">Submit Poll</button>
+            <p><button type="submit">Submit Poll</button></p>
         </form>
     </main>
 
     <footer>
-        <p>&copy; 2026|HTML Form-User Poll Activity|Isaac Adjei Agyare</p>
+        <p>&copy; 2026 | HTML Form-User Poll Activity | Isaac Adjei Agyare</p>
     </footer>
 </body>
 
