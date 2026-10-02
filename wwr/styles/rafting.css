@@ -150,7 +150,7 @@ textarea {
 
 button[type="submit"] {
     background-color: var(--accent1-color);
-    color: #fff;
+    color: var(--primary-color);
     border: none;
     padding: 0.75rem 1.5rem;
     border-radius: 4px;
@@ -172,6 +172,7 @@ footer {
 }
 
 footer p {
+    color: var(--primary-color);
     order: -1;
 }
 
