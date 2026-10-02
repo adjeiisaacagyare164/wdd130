@@ -121,6 +121,10 @@ nav a:hover {
     flex: 0 0 140px;
 }
 
+iframe {
+    border: 0;
+}
+
 .form-row input[type="text"],
 .form-row input[type="email"] {
     flex: 1;
