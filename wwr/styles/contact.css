@@ -42,15 +42,17 @@ h2,
     text-align: center;
 }
 
-.middle-section {
-    display: flex;
-    flex-direction: row;
-}
-
 h1,
 h2 {
     color: var(--primary-color);
     text-align: center;
+}
+
+.middle-section {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: flex-start;
 }
 
 .employees {
@@ -89,8 +91,71 @@ header img {
 /* ==========================================
    NAVIGATION
 ========================================== */
+nav a {
+    display: inline-block;
+    background-color: #fff;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    border-radius: 4px;
+    font-family: var(--body-font);
+}
 
-/* Footer */
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+/* ==========================================
+   CONTACT FORM
+========================================== */
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form-row label,
+.form-row p {
+    flex: 0 0 140px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 0.5rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+button[type="submit"] {
+    background-color: var(--accent1-color);
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
 footer {
     display: flex;
     align-items: center;
@@ -107,9 +172,13 @@ footer p {
 }
 
 /* Social Media */
+.socialmedia {
+    display: flex;
+    gap: 0.75rem;
+}
+
 .socialmedia img {
     background-color: transparent;
-    gap: 0.75rem;
     width: 40px;
     height: auto;
 }
