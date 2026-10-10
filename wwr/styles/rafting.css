@@ -328,6 +328,15 @@ button[type="submit"] {
     background-color: var(--primary-color);
 }
 
+/* ////////////////============= */
+.box {}
+
+.home-grid {
+    display: flex;
+    gap: 1rem;
+    background-color: var(--accent1-color);
+}
+
 /* ==========================================
    FOOTER
 ========================================== */
