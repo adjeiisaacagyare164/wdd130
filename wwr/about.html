@@ -4,85 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us Eminent rafting company</title>
+    <title>About Us | Eminent Rafting Co.</title>
     <meta name="description"
-      content="A water rafting page (Eminent Rafting Co.)for WDD 130 showcasing HTML, CSS, and project work.">
+      content="Learn about Eminent Rafting Co. in Weija-Accra: our story, our guides and the river adventures we offer for families, groups and thrill seekers.">
     <meta name="author" content="Isaac Agyare Adjei">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <!-- nav section -->
-        <img src="images/rafting_logo_new_.jpg" alt="rafting logo">
-        <nav>
-
+        <a href="index.html">
+            <img src="images/rafting_logo_new_.jpg" alt="Eminent Rafting Co. home">
+        </a>
+        <nav aria-label="Main">
             <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
+            <a href="about.html" aria-current="page">About Us</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-    <!-- hero section -->
+
     <main>
+        <!-- Hero -->
         <div class="hero">
-            <img src="images/pexels-dawinara.webp" alt="Rafting Adventure Image">
-            <h1>Eminent Rafting Co.</h1>
+            <img src="images/pexels-dawinara.webp" alt="A raft crew paddling through white water">
+            <h1>About Eminent Rafting Co.</h1>
             <article>
-                <h2>Experience the Thrill </h2>
-                <p>Join us for unforgettable rafting adventures on the world’s most exciting rivers
-                    <img src="../images/profile.jpg" alt="a happy working employee image ">
-                </p>
+                <img src="images/profile.jpg" alt="One of our river guides smiling">
+                <h2>Experience the Thrill</h2>
+                <p>Join us for unforgettable rafting adventures with trained guides
+                    and quality gear on every trip.</p>
             </article>
         </div>
+
+        <!-- History -->
         <section class="history">
             <h2>History</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, vitae
-                quia libero autem magnam molestias nulla incidunt corporis quo.
-                Praesentium
-            </p>
-            <img src="images/history.webp" alt="">
+
+            <p>Eminent Rafting Co. started with a simple idea: share the river with
+                everyone, safely. From our base in Weija-Accra, we have guided families,
+                friends and teams through their first rapids and their hundredth.</p>
+            <img src="images/history.webp" alt="Our team and guests on the river" loading="lazy">
             <p>Today, we continue to guide visitors through exciting rivers while promoting
-                teamwork, exploration,
-                and safety.</p>
+                teamwork, exploration and safety.</p>
         </section>
-        <!-- Adventure Section -->
+
+        <!-- Adventure -->
         <section class="adventure">
             <h2>Adventure Awaits You!</h2>
             <figure>
-
-                <img src="images/adv_1.webp" alt="First adventure">
+                <img src="images/adv_1.webp" alt="Rafters paddling through rapids" loading="lazy">
                 <figcaption>Los Dientes</figcaption>
             </figure>
             <figure>
-                <img src="images/adv2.jpg" alt="Second Adventure">
+                <img src="images/adv2.jpg" alt="Tents set up at a riverside camp" loading="lazy">
                 <figcaption>Camping</figcaption>
             </figure>
             <figure>
-                <img src="images/adv_3jpg.jpg" alt="third adventure">
-                <figcaption>Adventure 3</figcaption>
+                <img src="images/adv_3jpg.jpg" alt="A group enjoying a river trip" loading="lazy">
+                <figcaption>River Fun</figcaption>
             </figure>
             <figure>
-                <img src="images/adv_5.jpg" alt="Fourth adventure">
-                <figcaption>Adventure 4</figcaption>
+                <img src="images/adv_5.jpg" alt="A family floating together" loading="lazy">
+                <figcaption>Family Float</figcaption>
             </figure>
             <figure>
-                <img src="images/adv_6.jpg" alt="Fifth adventure">
-                <figcaption>Adventure 5</figcaption>
+                <img src="images/adv_6.jpg" alt="A raft riding a large rapid" loading="lazy">
+                <figcaption>Big Rapids</figcaption>
             </figure>
         </section>
     </main>
 
     <footer>
-        <nav class="socialmedia">
-            <a href="https://facebook.com">
-                <img src="images/facebook.webp" alt="Facebook Icon">
+        <nav class="socialmedia" aria-label="Social media">
+            <a href="https://facebook.com" rel="noopener" aria-label="Eminent Rafting on Facebook">
+                <img src="images/facebook.webp" alt="" loading="lazy">
             </a>
-            <a href="https://linkedin.com">
-                <img src="images/linkedin.webp" alt="LinkedIn Icon">
+            <a href="https://linkedin.com" rel="noopener" aria-label="Eminent Rafting on LinkedIn">
+                <img src="images/linkedin.webp" alt="" loading="lazy">
             </a>
-            <a href="https://instagram.com">
-                <img src="images/instagram.jpg" alt="Instagram Icon">
+            <a href="https://instagram.com" rel="noopener"
+              aria-label="Eminent Rafting on Instagram">
+                <img src="images/instagram.jpg" alt="" loading="lazy">
             </a>
         </nav>
         <p>&copy; 2026 Isaac Agyare Adjei | Eminent Rafting Co.</p>
