@@ -36,7 +36,7 @@ main {
 }
 
 /* Images never grow wider than their container.
-   This one rule does most of the work for small screens. */
+   small screens. */
 img {
     max-width: 100%;
     height: auto;
@@ -438,7 +438,8 @@ textarea {
 ========================================== */
 .employees {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(3, 200px);
+    justify-content: space-around;
     gap: 1rem;
     border: 1px solid #999;
     border-radius: 4px;
@@ -458,6 +459,7 @@ textarea {
     object-fit: cover;
     margin: 0 auto;
     border-radius: 4px;
+
 }
 
 /* ==========================================
